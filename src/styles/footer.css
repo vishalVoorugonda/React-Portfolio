@@ -1,0 +1,22 @@
+.footer-wrapper{
+     position: relative;
+}
+.footer-container{
+     position: absolute;
+     top: 50%;
+     left: 45%;
+}
+.footer-container span{
+     position: absolute;
+     top: -70px;
+     color: #fff;
+     font-size: 1.3rem;
+}
+.links-image{
+     position: absolute;
+     display: flex;
+}
+.social-icons{
+     font-size: 5.4rem;
+     color: rgb(230, 125, 5);
+}

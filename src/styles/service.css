@@ -1,0 +1,112 @@
+.myservice-container{
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     margin: 30px;
+     padding: 60px;
+     position: relative;
+     height: 133vh;
+     overflow: hidden;
+}
+.service-details{
+    width: 40%;
+    padding: 20px;
+    margin-left: 10%;
+    margin-top: -10%;
+}
+.service-details h1{
+     font-size: 3rem;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.skill{
+     color: orange;
+}
+.service-details p{
+     font-size: 1.2rem;
+     font-weight: 500;
+}
+.download-cv{
+      background-color: orange;
+      padding: 20px 30px;
+      border-radius: 40px;
+      margin-top: 80px;
+      border: none;
+      outline: none;
+      font-size: 1.26rem;
+      color: #fff;
+       box-shadow: 0px 14px 20px rgb(243, 186, 79);
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+}
+.download-cv:hover{
+     background-color: #fff;
+     border: 3px solid orange;
+     color: black;
+}
+/* .cards-container{
+     display: flex;
+     gap: 20px;
+} */
+ .cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.card{
+    width: 300px;
+    height: auto;
+    border: 18px solid rgb(231, 173, 106);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(0);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.card h1{
+     font-size: 4.3rem;
+}
+.designation{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.card-1{
+     position: absolute;
+    right: 15%;
+    top: 5%;
+    transform: translateX(100px);
+}
+.card-2{
+    position: absolute;
+     left: 30%;
+     top: 45%;
+     transform: translateX(-100px);
+}
+.card-3{
+     position: absolute;
+     right: 20%;
+     top: 55%;
+    transform: translateX(100px);
+}
+.card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

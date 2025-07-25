@@ -1,0 +1,143 @@
+.experience-container{
+    display: flex;
+    justify-content: space-around !important;
+}
+.experience-details{
+    height: auto;
+}
+.details{
+     display: flex;
+     flex-direction: column;
+     font-weight: 400;
+     gap: 3px;
+}
+.title{
+     margin: 0;
+     font-size: 3rem;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name{
+     margin: 0;
+     padding: 10px 0px;
+     color: orange;
+     font-size: 3.5rem;
+     font-family: 'Courier New', Courier, monospace;
+}
+.content{
+     width: 90% !important;
+     font-size: 1rem;
+     letter-spacing: 2px;
+     line-height: 30px;
+     font-weight: 400;
+     padding: 10px;
+}
+.hire{
+      background-color: orange;
+      padding: 20px 50px;
+      border-radius: 40px;
+      margin-left: 25px;
+      border: none;
+      outline: none;
+      font-size: 1.26rem;
+      margin-top: 100px;
+      color: #fff;
+      box-shadow: 0px 14px 20px rgb(243, 186, 79);
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+}
+.hire:hover{
+     background-color: #fff;
+     border: 3px solid orange;
+     color: black;
+}
+.right-side {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+/* White main circle */
+.white-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px rgb(197, 195, 195);
+  z-index: 2;
+  animation: rotating 1s  alternate forwards infinite;
+}
+.blue-circle {
+  position: absolute;
+  top: 50px;
+  right: -180px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.yellow-circle {
+  position: absolute;
+  bottom: 20px;
+  right: -180px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 1;
+}
+.circle-div{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     position: absolute;
+     background-color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0px 5px 20px 10px rgb(209, 203, 203) ;
+}
+.amazon{
+     top: 33%;
+     left: 33%;
+}
+.up{
+    left: 32%;
+    top: -16%;
+}
+.shopify{
+     top: 34%;
+     right: -50px;
+}
+.fi{
+    top: 34%;
+    left: -50px;
+}
+.facebook{
+     bottom: -16%;
+     left: 33%;
+}
+.circle-div img{
+     width: 60%;
+     height: 100%;
+     border-radius: 50%;
+     object-fit: contain; 
+}
+@keyframes rotateOnce {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.white-div.rotate {
+  animation: rotateOnce 3s ease-out forwards;
+}
